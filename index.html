@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FRUIT🍊NINJA🐱‍👤"
+    />
+    <title>Fruit Ninja</title>
+    <link rel="stylesheet" href="./dist/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+    />
+  </head>
+  <body>
+    <div class="score">
+      <section class="win">
+        <span>Score🍊</span>
+        <p class="score-number">0</p>
+      </section>
+      <section class="lose">
+        <p class="score-number">0/3</p>
+        <span>💖</span>
+      </section>
+    </div>
+    <video id="video"></video>
+
+    <h1 class="game-over">😁 Better Luck Next Time 🤷‍♂️</h1>
+
+    <main>
+      <section class="game"></section>
+      <section class="intro">
+        <h1>FRUIT🍊NINJA🐱‍👤</h1>
+        <p>Move your hands to slice some fruits!</p>
+        <p>
+          Allow access to your camera, take a step back from your computer and
+          try to be in a well-lit space!
+        </p>
+        <button disabled>Processing...</button>
+      </section>
+      <canvas id="output"></canvas>
+      <section class="mobile-intro">
+        Hey, looks like you might be using a mobile phone to view this page! I'm
+        excited you wanna check out this experiment but it works way better on
+        bigger screens if you can use a laptop!
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.min.js"></script>
+    <script src="./libs/MTLLoader.min.js"></script>
+    <script src="./libs/OBJLoader.min.js"></script>
+    <script src="./libs/trailRenderer.min.js"></script>
+    <script src="./dist/index.min.js" type="module"></script>
+  </body>
+</html>
